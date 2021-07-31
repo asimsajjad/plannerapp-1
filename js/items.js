@@ -23,6 +23,11 @@ $(document).ready(function() {
             "name": "Closed",
             "model": "models/js/closed-door28x80_baked.js",
             "default": true
+          },
+          {
+            "name": "Half Close",
+            "model": "models/js/open_door.js",
+            "default": true
           }
         ]
         /*"states":{
@@ -35,7 +40,24 @@ $(document).ready(function() {
       "name" : "Open Door",
       "image" : "models/thumbnails/thumbnail_Screen_Shot_2014-10-27_at_8.22.46_PM.png",
       "model" : "models/js/open_door.js",
-      "type" : "7"
+      "type" : "7",
+      "meta":{
+       "states": [
+          {
+            "name": "Open",
+            "model": "models/js/open_door.js",
+            "default": true,
+          },
+          {
+            "name": "Closed",
+            "model": "models/js/closed-door28x80_baked.js",
+          }
+        ]
+        /*"states":{
+          "Open":"models/js/open_door.js",
+          "Closed": "models/js/closed-door28x80_baked.js"
+        }*/
+      }
     }, 
     {
       "name" : "Window",

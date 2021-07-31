@@ -1013,7 +1013,7 @@ $(document).ready(function() {
 		  }
 		},
 		{
-			"name": "Animated Door",
+			"name": "Animated Key",
 			"model": "models/gltf/doorAnimation/key.glb",
 			"type": "8",
 			"image": "models/thumbnails/doorAnimation.png",
@@ -1022,6 +1022,26 @@ $(document).ready(function() {
 			  "animation": true
 			}
 		  },
+			{
+				"name": "Animated Door",
+				"model": "models/gltf/doorAnimation/scene.gltf",
+				"type": "3",
+				"image": "models/thumbnails/animated-door.png",
+				"format": "gltf",
+				"meta": {
+				"animation": true
+				}
+			},
+			{
+				"name": "Animated Main Door",
+				"model": "models/gltf/doorAnimation/animated-main-door.glb",
+				"type": "3",
+				"image": "models/thumbnails/animated-main-door.png",
+				"format": "gltf",
+				"meta": {
+				"animation": true
+				}
+			},
 		  {
 			"name": "Animated Figure",
 			"model": "models/gltf/doorAnimation/AnimatedTriangle.gltf",
@@ -1031,7 +1051,32 @@ $(document).ready(function() {
 			"meta": {
 			  "animation": true
 			}
-		  }
+		  },
+		  {
+			"name": "New Three States Door",
+			"model": "models/gltf/door/open-door.glb",
+			"type": "7",
+			"image": "models/thumbnails/new-three-states-door.png",
+			"format": "gltf",
+			"meta": {
+				"states": [
+					{
+					  "name": "Open",
+					  "model": "models/gltf/door/open-door.glb",
+					},
+					{
+					  "name": "Closed",
+					  "model": "models/gltf/door/close-door.glb",
+					  "default": true
+					},
+					{
+					  "name": "Half Close",
+					  "model": "models/gltf/door/half-close-door.glb",
+					  "default": true
+					}
+				  ]
+			}
+		  },
 	  ];
 var modelTypesNum = ["1","2","3","7","8","9","4"];
 
