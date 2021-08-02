@@ -1042,6 +1042,26 @@ $(document).ready(function() {
 				"animation": true
 				}
 			},
+			{
+				"name": "Animated Door Cracked",
+				"model": "models/gltf/doorAnimation/animated-door-cracked/scene.gltf",
+				"type": "3",
+				"image": "models/thumbnails/door/animated-door-cracked.png",
+				"format": "gltf",
+				"meta": {
+				"animation": true
+				}
+			},
+			{
+				"name": "Best Animated Door",
+				"model": "models/gltf/doorAnimation/best-animated-door/scene.gltf",
+				"type": "3",
+				"image": "models/thumbnails/door/best-animated-door.png",
+				"format": "gltf",
+				"meta": {
+				"animation": true
+				}
+			},
 		  {
 			"name": "Animated Figure",
 			"model": "models/gltf/doorAnimation/AnimatedTriangle.gltf",
@@ -1054,9 +1074,9 @@ $(document).ready(function() {
 		  },
 		  {
 			"name": "New Three States Door",
-			"model": "models/gltf/door/open-door.glb",
+			"model": "models/gltf/door/close-door.glb",
 			"type": "7",
-			"image": "models/thumbnails/new-three-states-door.png",
+			"image": "models/thumbnails/door/close-door.png",
 			"format": "gltf",
 			"meta": {
 				"states": [
@@ -1072,7 +1092,6 @@ $(document).ready(function() {
 					{
 					  "name": "Half Close",
 					  "model": "models/gltf/door/half-close-door.glb",
-					  "default": true
 					}
 				  ]
 			}
