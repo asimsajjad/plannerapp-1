@@ -58,7 +58,14 @@ $(document).ready(function() {
           "Closed": "models/js/closed-door28x80_baked.js"
         }*/
       }
-    }, 
+    },
+    {
+      "name" : "Animated Door",
+      "image" : "models/thumbnails/door_animate_2.jpg",
+      "model" : "models/js/door_animate_2.glb",
+      "type" : "7",
+      "format": "gltf"
+    },  
     {
       "name" : "Window",
       "image" : "models/thumbnails/thumbnail_window.png",
@@ -209,7 +216,22 @@ $(document).ready(function() {
         "model" : "models/js/Duck.gltf",
         "type" : "1",
         "format": "gltf",
-      }
+      },
+      {
+        "name" : "17sofa_w64_h88_d100_3",
+        "image" : "models/thumbnails/17sofa_w64_h88_d100_3.png",
+        "model" : "models/js/17sofa_w64_h88_d100_3.glb",
+        "type" : "1",
+        "format": "gltf",
+      },
+      {
+        "name" : "17sofa_w64_h88_d100_3",
+        "image" : "models/thumbnails/2picture_w100_h60_d3_1.png",
+        "model" : "models/js/2picture_w100_h60_d3_1.glb",
+        "type" : "7",
+        "format": "gltf",
+      },
+      
    /*     
    {
       "name" : "",
