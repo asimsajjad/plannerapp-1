@@ -164,7 +164,7 @@ var GlobalProperties = function()
 {
 	this.name = 'Global';
 	//a - feet and inches, b = inches, c - cms, d - millimeters, e - meters
-	this.units = {a:false, b:false, c:false, d:false, e:true};	
+	this.units = {a:false, b:false, c:true, d:false, e:false};	
 	this.unitslabel = {a:BP3DJS.dimFeetAndInch, b:BP3DJS.dimInch, c:BP3DJS.dimCentiMeter, d:BP3DJS.dimMilliMeter, e:BP3DJS.dimMeter};
 	this.guiControllers = null;
 	
@@ -611,8 +611,8 @@ function getCarbonSheetPropertiesFolder(gui, carbonsheet, globalproperties)
 	console.log('CARBON SHEET ', carbonsheet, carbonsheet.x);
 	var f = gui.addFolder('Carbon Sheet');
 	var url = f.add(carbonsheet, 'url').name('Url');
-	var width = f.add(carbonsheet, 'width').name('Real Width').max(1000.0).step(0.01);
-	var height = f.add(carbonsheet, 'height').name('Real Height').max(1000.0).step(0.01);
+	var width = f.add(carbonsheet, 'width').name('Real Width').max(10000.0).step(0.01);
+	var height = f.add(carbonsheet, 'height').name('Real Height').max(10000.0).step(0.01);
 	var proportion = f.add(carbonsheet, 'maintainProportion').name('Maintain Proportion');
 	var x = f.add(carbonsheet, 'x').name('Move in X');
 	var y = f.add(carbonsheet, 'y').name('Move in Y');
@@ -640,9 +640,9 @@ function getItemPropertiesFolder(gui, anItem)
 {
 	var f = gui.addFolder('Current Item');
 	var inamecontrol = f.add(anItem, 'name');
-	var wcontrol = f.add(anItem, 'width', 0.1, 1000.1).step(0.1);
-	var hcontrol = f.add(anItem, 'height', 0.1, 1000.1).step(0.1);
-	var dcontrol = f.add(anItem, 'depth', 0.1, 1000.1).step(0.1);
+	var wcontrol = f.add(anItem, 'width', 0.1, 10000.1).step(0.1);
+	var hcontrol = f.add(anItem, 'height', 0.1, 10000.1).step(0.1);
+	var dcontrol = f.add(anItem, 'depth', 0.1, 10000.1).step(0.1);
 	var pcontrol = f.add(anItem, 'proportionalsize').name('Maintain Size Ratio');
 	var lockcontrol = f.add(anItem, 'fixed').name('Locked in place');
 	var deleteItemControl = f.add(anItem, 'deleteItem').name('Delete Item');
